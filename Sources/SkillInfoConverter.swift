@@ -15,59 +15,25 @@ struct SkillInfo: Codable {
 
 struct SkillInfoConverter {
     func convert(from input: URL, to output: URL, for locale: Locale) throws {
-        let localeIdentifier = locale.identifier
         let localeEncoding = locale.language.preferredEncoding
 
         let context = LuaContext()
+        context.loadJSONModule()
 
-        let dkjsonURL = Bundle.module.url(forResource: "dkjson", withExtension: "lua")!
-        let dkjson = try! String(contentsOf: dkjsonURL, encoding: .utf8)
-        try context.parse("""
-        function load_dkjson()
-          \(dkjson)
-        end
-        
-        dkjson = load_dkjson()
-        """)
+        let jobinheritlistURL = input.appending(components: "jobinheritlist.lub")
+        context.loadData(at: jobinheritlistURL)
 
-        let jobinheritlistURL = input.appending(path: "jobinheritlist.lub")
-        if let data = try? Data(contentsOf: jobinheritlistURL) {
-            try context.load(data)
-        }
+        let skillidURL = input.appending(components: "skillid.lub")
+        context.loadData(at: skillidURL)
 
-        let skillidURL = input.appending(path: "skillid.lub")
-        if let data = try? Data(contentsOf: skillidURL) {
-            try context.load(data)
-        }
+        let skillinfolistURL = input.appending(components: locale.path, "skillinfolist.lub")
+        context.loadData(at: skillinfolistURL)
 
-        let skillinfolistURL = input.appending(path: "\(localeIdentifier).lproj").appending(path: "skillinfolist.lub")
-        if let data = try? Data(contentsOf: skillinfolistURL) {
-            try context.load(data)
-        }
+        let skilldescriptURL = input.appending(components: locale.path, "skilldescript.lub")
+        context.loadData(at: skilldescriptURL)
 
-        let skilldescriptURL = input.appending(path: "\(localeIdentifier).lproj").appending(path: "skilldescript.lub")
-        if let data = try? Data(contentsOf: skilldescriptURL) {
-            try context.load(data)
-        }
-
-        let skillinfofURL = input.appending(path: "skillinfo_f.lub")
-        if let data = try? Data(contentsOf: skillinfofURL) {
-            try context.load(data)
-        }
-
-        try context .parse("""
-        function GetSkillDescript2(skillID)
-          local descript = ""
-          local obj = SKILL_DESCRIPT[skillID]
-          if obj ~= nil then
-            for i, v in pairs(obj) do
-              descript = descript .. v
-              descript = descript .. "\\r\\n"
-            end
-          end
-          return descript
-        end
-        """)
+        let skillinfofURL = input.appending(components: "skillinfo_f.lub")
+        context.loadData(at: skillinfofURL)
 
         try context.parse("""
         function convert()
@@ -75,7 +41,7 @@ struct SkillInfoConverter {
           for skillAegisName, skillID in pairs(SKID) do
             result[skillID] = {
               skillName = GetSkillName(skillID),
-              skillDescription = GetSkillDescript2(skillID)
+              skillDescription = table.concat(SKILL_DESCRIPT[skillID] or {}, "\\r\\n")
             }
           end
         
@@ -94,10 +60,10 @@ struct SkillInfoConverter {
 
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-        let skillInfoData = try encoder.encode(skillInfos)
-        let skillInfoURL = output.appending(path: "\(localeIdentifier).lproj").appending(path: "SkillInfo.json")
+        let jsonData = try encoder.encode(skillInfos)
+        let jsonURL = output.appending(components: locale.path, "SkillInfo.json")
 
-        try FileManager.default.createDirectory(at: skillInfoURL.deletingLastPathComponent(), withIntermediateDirectories: true)
-        try skillInfoData.write(to: skillInfoURL)
+        try FileManager.default.createDirectory(at: jsonURL.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try jsonData.write(to: jsonURL)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Locales.swift
+//  Locale.swift
 //  ro-data-converter
 //
 //  Created by Leon Li on 2025/8/4.
@@ -23,6 +23,12 @@ let locales = [
     Locale(languageCode: .thai),
     Locale(languageCode: .turkish),
 ]
+
+extension Locale {
+    var path: String {
+        identifier(.bcp47) + ".lproj"
+    }
+}
 
 extension Locale.Language {
     var preferredEncoding: String.Encoding {

@@ -18,8 +18,17 @@ struct Convert: ParsableCommand {
 
     func run() throws {
         for locale in locales {
-            let skillInfoConverter = SkillInfoConverter()
-            try? skillInfoConverter.convert(from: input, to: output, for: locale)
+            print("Converting item info for \(locale.path)")
+
+            let converter = ItemInfoConverter()
+            try? converter.convert(from: input, to: output, for: locale)
+        }
+
+        for locale in locales {
+            print("Converting skill info for \(locale.path)")
+
+            let converter = SkillInfoConverter()
+            try converter.convert(from: input, to: output, for: locale)
         }
     }
 }
