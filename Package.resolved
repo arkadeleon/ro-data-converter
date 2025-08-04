@@ -1,0 +1,24 @@
+{
+  "originHash" : "b2cabd8baa6551ec8a45f3f8e9bf76ffc99bb59cc9a9b3d0a08bce4424454250",
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "309a47b2b1d9b5e991f36961c983ecec72275be3",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swift-lua",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/arkadeleon/swift-lua.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "06ee34fc258592f582e8a8fe4562ec2801023efc"
+      }
+    }
+  ],
+  "version" : 3
+}
