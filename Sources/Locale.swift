@@ -70,4 +70,11 @@ extension String {
             self = string
         }
     }
+
+    func transcoding(from: String.Encoding, to: String.Encoding) -> String {
+        let string = data(using: from).flatMap { data in
+            String(data: data, encoding: to)
+        }
+        return string ?? self
+    }
 }

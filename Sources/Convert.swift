@@ -21,7 +21,14 @@ struct Convert: ParsableCommand {
             print("Converting item info for \(locale.path)")
 
             let converter = ItemInfoConverter()
-            try? converter.convert(from: input, to: output, for: locale)
+            try converter.convert(from: input, to: output, for: locale)
+        }
+
+        for locale in locales {
+            print("Converting map name for \(locale.path)")
+
+            let converter = MapNameConverter()
+            try converter.convert(from: input, to: output, for: locale)
         }
 
         for locale in locales {
