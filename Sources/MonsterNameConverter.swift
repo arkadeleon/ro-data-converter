@@ -14,7 +14,7 @@ struct MonsterNameConverter {
             return
         }
 
-        var monsterNames: [Int : String] = [:]
+        var monsterNames: [String : String] = [:]
 
         let lines = string.split(separator: "\n")
         for line in lines {
@@ -22,13 +22,10 @@ struct MonsterNameConverter {
                 continue
             }
 
-            let columns = line.split(separator: ",")
-            if columns.count >= 2 {
-                if let monsterID = Int(String(columns[0])) {
-                    let monsterName = String(columns[1])
-                    monsterNames[monsterID] = monsterName
-                }
-            }
+            let columns = line.split(separator: ",").map(String.init)
+            let monsterID = String(format: "%05d", Int(columns[0])!)
+            let monsterName = columns[1]
+            monsterNames[monsterID] = monsterName
         }
 
         let encoder = JSONEncoder()

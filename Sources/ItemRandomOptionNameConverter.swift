@@ -37,10 +37,10 @@ struct ItemRandomOptionNameConverter {
         let names = try decoder.decode([String?].self, from: json.data(using: .utf8)!)
 
         let itemRandomOptionNames = Dictionary(
-            names.enumerated().map({ ($0.offset + 1, $0.element ?? "") }),
+            names.enumerated().map({ (String(format: "%03d", $0.offset + 1), $0.element) }),
             uniquingKeysWith: { first, _ in first }
-        ).mapValues { name in
-            name.transcoding(from: .isoLatin1, to: locale.language.preferredEncoding)
+        ).compactMapValues { name in
+            name?.transcoding(from: .isoLatin1, to: locale.language.preferredEncoding)
         }
 
         let encoder = JSONEncoder()

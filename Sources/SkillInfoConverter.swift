@@ -9,8 +9,8 @@ import Foundation
 import Lua
 
 struct SkillInfo: Codable {
-    var skillName: String
-    var skillDescription: String
+    var skillName: String?
+    var skillDescription: String?
 }
 
 struct SkillInfoConverter {
@@ -35,12 +35,26 @@ struct SkillInfoConverter {
 
         try context.parse("""
         function convert()
-          result = {}
+          local result = {}
           for skillAegisName, skillID in pairs(SKID) do
-            result[skillID] = {
-              skillName = GetSkillName(skillID),
-              skillDescription = table.concat(SKILL_DESCRIPT[skillID] or {}, "\\r\\n")
-            }
+            local key = string.format("%05d", skillID)
+        
+            local skillName
+            if SKILL_INFO_LIST[skillID] and SKILL_INFO_LIST[skillID].SkillName then
+              skillName = SKILL_INFO_LIST[skillID].SkillName
+            end
+        
+            local skillDescription
+            if SKILL_DESCRIPT[skillID] then
+              skillDescription = table.concat(SKILL_DESCRIPT[skillID], "\\r\\n")
+            end
+        
+            if skillName or skillDescription then
+              result[key] = {
+                skillName = skillName,
+                skillDescription = skillDescription
+              }
+            end
           end
         
           return dkjson.encode(result, { indent = true })
@@ -52,8 +66,8 @@ struct SkillInfoConverter {
         let decoder = JSONDecoder()
         var skillInfos = try decoder.decode([String : SkillInfo].self, from: json.data(using: .utf8)!)
         for skillID in skillInfos.keys {
-            skillInfos[skillID]?.skillName.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
-            skillInfos[skillID]?.skillDescription.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
+            skillInfos[skillID]?.skillName?.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
+            skillInfos[skillID]?.skillDescription?.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
         }
 
         let encoder = JSONEncoder()

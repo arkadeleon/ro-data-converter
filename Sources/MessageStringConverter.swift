@@ -14,15 +14,16 @@ struct MessageStringConverter {
             return
         }
 
-        var messageStrings: [Int : String] = [:]
+        var messageStrings: [String : String] = [:]
 
         let lines = string.split(separator: "\r\n").map(String.init)
         for (lineNumber, line) in lines.enumerated() {
+            let messageID = String(format: "%04d", lineNumber)
             var messageString = line.transcoding(from: .isoLatin1, to: locale.language.preferredEncoding)
             if messageString.hasSuffix("#") {
                 messageString.removeLast()
             }
-            messageStrings[lineNumber] = messageString
+            messageStrings[messageID] = messageString
         }
 
         let encoder = JSONEncoder()

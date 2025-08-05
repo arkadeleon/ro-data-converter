@@ -49,8 +49,9 @@ struct ItemInfoConverter {
 
         try context.parse("""
         function convert()
-          result = {}
-          for key, value in pairs(tbl) do
+          local result = {}
+          for itemID, value in pairs(tbl) do
+            local key = string.format("%07d", itemID)
             result[key] = {
               unidentifiedItemName = value["unidentifiedDisplayName"],
               unidentifiedItemDescription = table.concat(value["unidentifiedDescriptionName"], "\\r\\n"),
@@ -73,8 +74,7 @@ struct ItemInfoConverter {
     private func txtItemInfos(from input: URL, for locale: Locale) -> [String : ItemInfo] {
         let identifiedItemNames: [String : String] = {
             let url = input.appending(components: locale.path, "idnum2itemdisplaynametable.txt")
-            guard let data = try? Data(contentsOf: url),
-                  let string = String(data: data, encoding: .isoLatin1) else {
+            guard let string = try? String(contentsOf: url, encoding: .isoLatin1) else {
                 return [:]
             }
 
@@ -87,11 +87,10 @@ struct ItemInfoConverter {
                 }
 
                 let columns = line.split(separator: "#").map(String.init)
-                if columns.count >= 2 {
-                    let itemID = columns[0]
-                        .trimmingCharacters(in: .whitespacesAndNewlines)
-                    let itemDisplayName = columns[1]
-                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                if columns.count >= 2,
+                   let itemID = Int(columns[0].trimmingCharacters(in: .whitespacesAndNewlines)) {
+                    let itemID = String(format: "%07d", itemID)
+                    let itemDisplayName = columns[1].trimmingCharacters(in: .whitespacesAndNewlines)
                     identifiedItemNames[itemID] = itemDisplayName
                 }
             }
@@ -101,8 +100,7 @@ struct ItemInfoConverter {
 
         let identifiedItemDescriptions: [String : String] = {
             let url = input.appending(components: locale.path, "idnum2itemdesctable.txt")
-            guard let data = try? Data(contentsOf: url),
-                  let string = String(data: data, encoding: .isoLatin1) else {
+            guard let string = try? String(contentsOf: url, encoding: .isoLatin1) else {
                 return [:]
             }
 
@@ -115,11 +113,10 @@ struct ItemInfoConverter {
                 }
 
                 let columns = line.split(separator: "#").map(String.init)
-                if columns.count >= 2 {
-                    let itemID = columns[0]
-                        .trimmingCharacters(in: .whitespacesAndNewlines)
-                    let itemDescription = columns[1]
-                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                if columns.count >= 2,
+                   let itemID = Int(columns[0].trimmingCharacters(in: .whitespacesAndNewlines)) {
+                    let itemID = String(format: "%07d", itemID)
+                    let itemDescription = columns[1].trimmingCharacters(in: .whitespacesAndNewlines)
                     identifiedItemDescriptions[itemID] = itemDescription
                 }
             }

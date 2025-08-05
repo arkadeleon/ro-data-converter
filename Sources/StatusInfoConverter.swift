@@ -31,8 +31,9 @@ struct StatusInfoConverter {
 
         try context.parse("""
         function convert()
-          result = {}
-          for key, value in pairs(StateIconList) do
+          local result = {}
+          for statusID, value in pairs(StateIconList) do
+            local key = string.format("%04d", statusID)
             result[key] = {
               statusName = value["descript"][1][1]
             }
@@ -45,7 +46,7 @@ struct StatusInfoConverter {
         let json = try context.call("convert", with: []) as! String
 
         let decoder = JSONDecoder()
-        var statusInfos = try decoder.decode([Int : StatusInfo].self, from: json.data(using: .utf8)!)
+        var statusInfos = try decoder.decode([String : StatusInfo].self, from: json.data(using: .utf8)!)
         for statusID in statusInfos.keys {
             statusInfos[statusID]?.statusName.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
         }

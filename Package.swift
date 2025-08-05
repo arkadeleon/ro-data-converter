@@ -20,7 +20,7 @@ let package = Package(
                 .product(name: "Lua", package: "swift-lua"),
             ],
             resources: [
-                .copy("dkjson.lua"),
+                .copy("Lua/dkjson.lua"),
             ]
         ),
     ]
