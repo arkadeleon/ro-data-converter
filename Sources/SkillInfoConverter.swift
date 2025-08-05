@@ -15,8 +15,6 @@ struct SkillInfo: Codable {
 
 struct SkillInfoConverter {
     func convert(from input: URL, to output: URL, for locale: Locale) throws {
-        let localeEncoding = locale.language.preferredEncoding
-
         let context = LuaContext()
         context.loadJSONModule()
 
@@ -54,8 +52,8 @@ struct SkillInfoConverter {
         let decoder = JSONDecoder()
         var skillInfos = try decoder.decode([String : SkillInfo].self, from: json.data(using: .utf8)!)
         for skillID in skillInfos.keys {
-            skillInfos[skillID]?.skillName.transcode(from: .isoLatin1, to: localeEncoding)
-            skillInfos[skillID]?.skillDescription.transcode(from: .isoLatin1, to: localeEncoding)
+            skillInfos[skillID]?.skillName.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
+            skillInfos[skillID]?.skillDescription.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
         }
 
         let encoder = JSONEncoder()
