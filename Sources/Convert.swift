@@ -32,6 +32,13 @@ struct Convert: ParsableCommand {
         }
 
         for locale in locales {
+            print("Converting message string for \(locale.path)")
+
+            let converter = MessageStringConverter()
+            try converter.convert(from: input, to: output, for: locale)
+        }
+
+        for locale in locales {
             print("Converting skill info for \(locale.path)")
 
             let converter = SkillInfoConverter()

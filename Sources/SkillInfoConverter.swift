@@ -20,10 +20,10 @@ struct SkillInfoConverter {
         let context = LuaContext()
         context.loadJSONModule()
 
-        let jobinheritlistURL = input.appending(components: "jobinheritlist.lub")
+        let jobinheritlistURL = input.appending(component: "jobinheritlist.lub")
         context.loadData(at: jobinheritlistURL)
 
-        let skillidURL = input.appending(components: "skillid.lub")
+        let skillidURL = input.appending(component: "skillid.lub")
         context.loadData(at: skillidURL)
 
         let skillinfolistURL = input.appending(components: locale.path, "skillinfolist.lub")
@@ -32,7 +32,7 @@ struct SkillInfoConverter {
         let skilldescriptURL = input.appending(components: locale.path, "skilldescript.lub")
         context.loadData(at: skilldescriptURL)
 
-        let skillinfofURL = input.appending(components: "skillinfo_f.lub")
+        let skillinfofURL = input.appending(component: "skillinfo_f.lub")
         context.loadData(at: skillinfofURL)
 
         try context.parse("""
