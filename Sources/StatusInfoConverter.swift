@@ -9,7 +9,7 @@ import Foundation
 import Lua
 
 struct StatusInfo: Codable {
-    var statusName: String
+    var statusDescription: String
 }
 
 struct StatusInfoConverter {
@@ -35,7 +35,7 @@ struct StatusInfoConverter {
           for statusID, value in pairs(StateIconList) do
             local key = string.format("%04d", statusID)
             result[key] = {
-              statusName = value["descript"][1][1]
+              statusDescription = value["descript"][1][1]
             }
           end
         
@@ -48,7 +48,7 @@ struct StatusInfoConverter {
         let decoder = JSONDecoder()
         var statusInfos = try decoder.decode([String : StatusInfo].self, from: json.data(using: .utf8)!)
         for statusID in statusInfos.keys {
-            statusInfos[statusID]?.statusName.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
+            statusInfos[statusID]?.statusDescription.transcode(from: .isoLatin1, to: locale.language.preferredEncoding)
         }
 
         let encoder = JSONEncoder()
