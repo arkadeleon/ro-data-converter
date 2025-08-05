@@ -10,8 +10,7 @@ import Foundation
 struct MapNameConverter {
     func convert(from input: URL, to output: URL, for locale: Locale) throws {
         let url = input.appending(components: locale.path, "mapnametable.txt")
-        guard let data = try? Data(contentsOf: url),
-              let string = String(data: data, encoding: .isoLatin1) else {
+        guard let string = try? String(contentsOf: url, encoding: .isoLatin1) else {
             return
         }
 
@@ -26,6 +25,7 @@ struct MapNameConverter {
             let columns = line.split(separator: "#")
             if columns.count >= 2 {
                 let rsw = columns[0]
+                    .trimmingCharacters(in: .whitespaces)
                     .replacingOccurrences(of: ".rsw", with: "")
                 let mapName = columns[1]
                     .trimmingCharacters(in: .whitespaces)

@@ -39,6 +39,13 @@ struct Convert: ParsableCommand {
         }
 
         for locale in locales {
+            print("Converting monster name for \(locale.path)")
+
+            let converter = MonsterNameConverter()
+            try converter.convert(from: input, to: output, for: locale)
+        }
+
+        for locale in locales {
             print("Converting skill info for \(locale.path)")
 
             let converter = SkillInfoConverter()

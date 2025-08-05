@@ -10,8 +10,7 @@ import Foundation
 struct MessageStringConverter {
     func convert(from input: URL, to output: URL, for locale: Locale) throws {
         let url = input.appending(components: locale.path, "msgstringtable.txt")
-        guard let data = try? Data(contentsOf: url),
-              let string = String(data: data, encoding: .isoLatin1) else {
+        guard let string = try? String(contentsOf: url, encoding: .isoLatin1) else {
             return
         }
 

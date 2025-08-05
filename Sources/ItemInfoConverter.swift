@@ -86,10 +86,12 @@ struct ItemInfoConverter {
                     continue
                 }
 
-                let columns = line.split(separator: "#")
+                let columns = line.split(separator: "#").map(String.init)
                 if columns.count >= 2 {
-                    let itemID = String(columns[0])
-                    let itemDisplayName = String(columns[1])
+                    let itemID = columns[0]
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                    let itemDisplayName = columns[1]
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
                     identifiedItemNames[itemID] = itemDisplayName
                 }
             }
@@ -112,10 +114,11 @@ struct ItemInfoConverter {
                     continue
                 }
 
-                let columns = line.split(separator: "#")
+                let columns = line.split(separator: "#").map(String.init)
                 if columns.count >= 2 {
-                    let itemID = String(columns[0])
-                    let itemDescription = String(columns[1])
+                    let itemID = columns[0]
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                    let itemDescription = columns[1]
                         .trimmingCharacters(in: .whitespacesAndNewlines)
                     identifiedItemDescriptions[itemID] = itemDescription
                 }
