@@ -447,11 +447,9 @@
 4448#of Damned#
 4449#of Hallowed#
 4450#Surplus#
-4451#of Axis#
+4451#of Excess#
 4452#Magical#
 4453#Violent#
-4454#Sorry#
-4455#Love#
 4456#Spell Master#
 4457#Psychic#
 4458#of Illusion#
@@ -459,46 +457,21 @@
 4460#of Healing#
 4461#of Sharp#
 4462#Prime Defense#
-4463#Prime Offense#
+4463#Prime Attack#
 4464#Fatal#
-4465#Sweeping#
-4466#Straight Shooting#
+4465#Sweep#
+4466#Straight#
 4467#Heavy#
-4468#Polution#
+4468#Pollution#
 4469#Marine#
-4470#Botany#
+4470#Botani#
 4471#Draco#
-4472#Carnivore#
+4472#Carnival#
 4473#Undead#
 4474#Mortal#
 4475#Intangible#
 4476#Entomic#
 4477#Demonic#
-4480#Of Halfreload#
-4481#Half Jack Frost#
-4482#Of Half regeneration#
-4483#Half Spiritual#
-4484#Of Half Gemstone#
-4485#Half Abyss#
-4505#of Mad Witch#
-4506#of Archer#
-4507#Scaraba#
-4508#of Mad Berserker#
-4509#Insectproof#
-4510#Black-out#
-4511#Silentium#
-4512#of Acolyte#
-4513#of Thief#
-4514#Exorcism#
-4515#Flora#
-4516#of Stone wall#
-4517#of Magician#
-4518#Burning#
-4519#Seraphim#
-4520#Screaming#
-4521#Mortal Blow#
-4522#Cold#
-4523#Aquarius#
 4524#of Swordman#
 4525#Sweeping#
 4526#of MDEF#
@@ -510,11 +483,30 @@
 4532#Sprinting#
 4533#Blinding#
 4534#Water Bomb#
-4991#Carefree#
-4998#of Valor#
-4999#of Aegis#
-4545#Novice#
-//-----영웅의 흔적2
+4505#of Mad Witch#
+4506#of Archer#
+4507#Scaraba#
+4508#of Mad Berserker#
+4509#Insectproof#
+4510#Blackout#
+4511#Silentium#
+4512#of Acolyte#
+4513#of Thief#
+4514#Exorcism#
+4515#Flora#
+4516#of Stone Wall#
+4517#of Magician#
+4518#Burning#
+4519#Seraphim#
+4520#Screaming#
+4626#Wave#
+4629#Dry#
+4627#Vibe#
+4628#of Invisible Horror#
+4632#Electronic#
+4631#Speedy#
+4630#of Time Keeper#
+4625#Wise man's#
 4560#of Bragi#
 4561#of Magic Protection#
 4562#of penetrating#
@@ -563,21 +555,73 @@
 4605#of Hunger#
 4606#of Revenge#
 4607#of Librarian#
-4556#Power Ward#
-4557#of Spell Power#
+
 // 2013년 2월_마신전메모리얼
 4559#Blitz#
-//--- hero trail 3
+
+4556#Power Ward#
+4557#of Spell Power#
 4610#of Protection#
-4939##
-4940##
-4941##
-4942##
-4943##
-4944##
-4945##
-4946##
-4947##
-4948##
-4949##
-4950##
+
+4652#Punishment#
+4653#Undead Animal's#
+4654#Tomb Raider's#
+4655#Grave Keeper's#
+4656#Hypnotist#
+4657#Flame#
+4658#of Sorcery#
+27026#Rage#
+27027#Burning#
+27028#Blazing#
+27029#FlameEater#
+27030#Firebug#
+27157#of Aquawood#
+27158#of Windness#
+27159#DemonHunter#
+27160#Dodge#
+27161#LandBlassed#
+27162#SoulSteal#
+27163#of Abrancio#
+27164#Coya#
+27165#of Albion#
+27166#Frio#
+27167#Glacial#
+27168#of Padre#
+27169#Infante#
+27249#Arhi#
+27250#Anemos#
+27251#Gang#
+27252#Bully#
+27253#Shoplifter#
+27254#Faymont#
+27255#Ordre#
+27256#Hase#
+27257#Akuma#
+27258#Ifodes#
+27259#Licheniyes#
+27260#Odoric#
+27261#Ju#
+27262#Dwigh#
+27263#Kanavian#
+31016#of Sorrow#
+31017#of Hatred#
+31018#Frustration#
+31019#of Chill#
+31020#of Wrath#
+31021#Madness#
+31022#of Despair#
+31023#Maniac#
+
+//EP15.1
+27012#Active Protection#
+27013#Balkan#
+27014#Mirage#
+27015#Restore#
+27016#All Scanning#
+27017#Tempur#
+27018#Overclocking#
+27019#Debugging#
+27020#System-Error#
+4697#Overload#
+4698#Boomerang#
+4699#Dual Cannon#

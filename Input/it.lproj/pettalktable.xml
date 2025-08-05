@@ -4271,6 +4271,8 @@
 		<perfor_s>	Don't you hear the carol?	</perfor_s>
 	</so_full>
 </XMAS_LUNATIC>
+
+
 <TIKBALANG>				
 	<hungry>			
 		<feeding>	I'm hungry. Give me something to eat. Or else I will go on strike.	</feeding>
@@ -4374,4 +4376,275 @@
 	</so_full>			
 </TIKBALANG>
 
+
+
+	<scatleton>				
+					
+		<hungry>			
+			<feeding>	Something which has been sleeping inside me finally is wakig up!	</feeding>
+			<feeding>	Beelzebub	</feeding>
+			<hunting>	Share your kills! Its only polite.	</hunting>
+			<hunting>	Poor unfortunate souls	</hunting>
+			<danger>	What was that?!	</danger>
+			<danger>	Oops What¡®s happening? I am falling unconscious	</danger>
+			<dead>	Don¡®t worry. No matter how hungry I am, I am not going to eat you.	</dead>
+			<dead>	Let¡®s go back together to my hometown	</dead>
+			<stand>	No that guy started moving around	</stand>
+			<stand>	It¡®s so painful	</stand>
+			<stand>	Can¡®t you hear the screaming?	</stand>
+			<connect>	I was thinking that becoming a demon was not such a bad idea.	</connect>
+			<connect>	Again The time for darkness returns.	</connect>
+			<levelup>	Haha	</levelup>
+			<levelup>	If you want to survive get stronger	</levelup>
+			<perfor_1>	You seem disengaged, Well, Enjoy while you can.	</perfor_1>
+			<perfor_1>	Heh	</perfor_1>
+			<perfor_2>	Being alive means continuous agony.	</perfor_2>
+			<perfor_2>	The greed only destructs yourself	</perfor_2>
+			<perfor_3>	Can you feel my power?.....	</perfor_3>
+			<perfor_3>	Haha It¡®s been a long time since my blood boiled like this</perfor_3>
+			<perfor_s>	Oh I feel dizzy What a new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! The chaos is coming!!!!!	</perfor_s>
+		</hungry>			
+					
+		<bit_hungry>			
+			<feeding>	You cannot appease my vanity like this	</feeding>
+			<feeding>	Silly human	</feeding>
+			<hunting>	Is this the best you can do?	</hunting>
+			<hunting>	How boring	</hunting>
+			<danger>	I can  only go this far	</danger>
+			<danger>	I am not hunting. I am being hunted	</danger>
+			<dead>	Don¡®t worry. No matter how hungry I am, I am not going to eat you.	</dead>
+			<dead>	Let¡®s go back together to my hometown	</dead>
+			<stand>	This feeling of hunger is a proof that I am alive.	</stand>
+			<stand>	Can¡®t you hear the screaming?	</stand>
+			<stand>	How boring	</stand>
+			<connect>	Again The time for darkness returns.	</connect>
+			<connect>	It was a short rest	</connect>
+			<levelup>	If you want to survive get stronger	</levelup>
+			<levelup>	You¡®re not strong enough.	</levelup>
+			<perfor_1>	You seem disengaged Well Enjoy while you can.	</perfor_1>
+			<perfor_1>	Heh	</perfor_1>
+			<perfor_2>	Being alive means continuous agony.	</perfor_2>
+			<perfor_2>	The greed only destructs yourself	</perfor_2>
+			<perfor_3>	Can you feel my power?.....	</perfor_3>
+			<perfor_3>	Haha It¡®s been a long time since my blood boiled like this	</perfor_3>
+			<perfor_s>	Oh I feel dizzy What a new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! The chaos is coming!!!!!	</perfor_s>
+		</bit_hungry>			
+					
+		<noting>			
+			<feeding>	At that time I thought nothing was worse than hunger </feeding>
+			<feeding>	Heh It was a meaningless memory	</feeding>
+			<hunting>	Great! Destroy it!!!! That¡®s what you actually are!!!	</hunting>
+			<hunting>	Hahahahahahahaha!!!! Hahahahahahahahaha!!!!	</hunting>
+			<danger>	The fury makes your sword blunt	</danger>
+			<danger>	I can  only go this far	</danger>
+			<dead>	Do you feel it? This is the sorrow and fury of those who have been killed by you.	</dead>
+			<dead>	Do not be afraid of the darkness	</dead>
+			<stand>	How boring	</stand>
+			<stand>	It¡®s been a long time since my last rest.	</stand>
+			<stand>	Well If you want it so badly, I will give you an opportunity to serve me.	</stand>
+			<connect>	Again The time for darkness returns.	</connect>
+			<connect>	The festival of blood begins	</connect>
+			<levelup>	Good. Struggle more and more	</levelup>
+			<levelup>	You¡®re not strong enough.	</levelup>
+			<perfor_1>	You seem disengaged Well Enjoy while you can.	</perfor_1>
+			<perfor_1>	Heh	</perfor_1>
+			<perfor_2>	Being alive means continuous agony.	</perfor_2>
+			<perfor_2>	The greed only destructs yourself	</perfor_2>
+			<perfor_3>	Can you feel my power?.....	</perfor_3>
+			<perfor_3>	Haha It¡®s been a long time since my blood boiled like this	</perfor_3>
+			<perfor_s>	Oh I feel dizzy What a new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! The chaos is coming!!!!!	</perfor_s>
+		</noting>			
+					
+		<full>			
+			<feeding>	You¡®d better stop it. You silly human	</feeding>
+			<feeding>	Oh	</feeding>
+			<hunting>	Looks like I don¡®t have to be involved.	</hunting>
+			<hunting>	Great! Destroy it!!!! That¡®s what you actually are!!!	</hunting>
+			<danger>	The fury makes your sword blunt	</danger>
+			<danger>	You will  collapse by the greed	</danger>
+			<dead>	Hahahahahaha! The  gate of hell is opening!	</dead>
+			<dead>	Blah Blah Blah I have Thumbs, well what did your thumbs do for you now?	</dead>
+			<stand>	How much longer are you going to hesitate!	</stand>
+			<stand>	What a threatening wind	</stand>
+			<stand>	Well If you want it so badly, I will give you an opportunity to serve me.	</stand>
+			<connect>	The festival of blood begins	</connect>
+			<connect>	Again The time for darkness returns.	</connect>
+			<levelup>	Good. Struggle more and more	</levelup>
+			<levelup>	Seems like you have grown up a little.	</levelup>
+			<perfor_1>	You seem disengaged Well Enjoy while you can.	</perfor_1>
+			<perfor_1>	Heh	</perfor_1>
+			<perfor_2>	Being alive means continuous agony.	</perfor_2>
+			<perfor_2>	The greed only destructs yourself	</perfor_2>
+			<perfor_3>	Can you feel my power?.....	</perfor_3>
+			<perfor_3>	Haha It¡®s been a long time since my blood boiled like this	</perfor_3>
+			<perfor_s>	Oh I feel dizzy What a new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! The chaos is coming!!!!!	</perfor_s>
+		</full>			
+					
+		<so_full>			
+			<feeding>	You¡®d better stop it. You silly human	</feeding>
+			<feeding>	Are you trying to torture me this way? What a coward	</feeding>
+			<hunting>	Looks like I don¡®t have to be involved.	</hunting>
+			<hunting>	That¡®s noisy	</hunting>
+			<danger>	Can you see the sign of death?.....	</danger>
+			<danger>	This is from someone who¡®s destined for death.	</danger>
+			<dead>	Hahahahahaha! The  gate of hell is opening!	</dead>
+			<dead>	Do you feel it? This is the sorrow and fury of those who have been killed by you.	</dead>
+			<stand>	What a threatening wind	</stand>
+			<stand>	I can take you on at any time, kid	</stand>
+			<stand>	Are you tired already?	</stand>
+			<connect>	The festival of blood begins	</connect>
+			<connect>	Again The time for darkness returns.	</connect>
+			<levelup>	Good. Struggle more and more	</levelup>
+			<levelup>	Seems like you have grown up a little.	</levelup>
+			<perfor_1>	You seem disengaged Well Enjoy while you can.	</perfor_1>
+			<perfor_1>	Heh	</perfor_1>
+			<perfor_2>	Being alive means continuous agony.	</perfor_2>
+			<perfor_2>	The greed only destructs yourself	</perfor_2>
+			<perfor_3>	Can you feel my power?.....	</perfor_3>
+			<perfor_3>	Haha It¡®s been a long time since my blood boiled like	</perfor_3>
+			<perfor_s>	Oh I feel dizzy What a new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! The chaos is coming!!!!!	</perfor_s>
+		</so_full>			
+					
+	</scatleton>						
+
+		<skelion>				
+		<hungry>			
+			<feeding>	ke?.... The monster within myself opened eyes....	</feeding>
+			<feeding>	Beelzebub......	</feeding>
+			<hunting>	Devour the hunted ones. Its the last sympathy for the deads.	</hunting>
+			<hunting>	Pityful souls.....	</hunting>
+			<danger>	Its not hunting but being hunted.....	</danger>
+			<danger>	keah.... Consciousness is being blurred....	</danger>
+			<dead>	Don't worry. I won't eat you although starved.	</dead>
+			<dead>	Let's go back... to my... home together....	</dead>
+			<stand>	Ke ah... It is starting to rattle....	</stand>
+			<stand>	So painful...	</stand>
+			<stand>	Can't you hear it? The screaming...	</stand>
+			<connect>	I thought its better to be remained as a monkfish.	</connect>
+			<connect>	Again... the darkness will come.	</connect>
+			<levelup>	ke?....	</levelup>
+			<levelup>	If you want to survive...be strong...	</levelup>
+			<perfor_1>	You seems to be peaceful... okay...it won't last long.	</perfor_1>
+			<perfor_1>	ah...	</perfor_1>
+			<perfor_2>	Breathing is like endless agony	</perfor_2>
+			<perfor_2>	Greed destroy itself...	</perfor_2>
+			<perfor_3>	Do you feel the power within myself...	</perfor_3>
+			<perfor_3>	ke?... It has been a long time since my blood got boiled...	</perfor_3>
+			<perfor_s>	?...I am so dazzled... it is new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! Chaos is coming!!!!!	</perfor_s>
+		</hungry>			
+					
+		<bit_hungry>			
+			<feeding>	This cannot relieve me from the my emptiness....	</feeding>
+			<feeding>	You fool...	</feeding>
+			<hunting>	Is that all you've got?	</hunting>
+			<hunting>	Its so tedious...	</hunting>
+			<danger>	Maybe this is it...	</danger>
+			<danger>	Its not hunting but being hunted...	</danger>
+			<dead>	Don't worry/ I won't eat you although starved.	</dead>
+			<dead>	Let's gp back... to my... home together...	</dead>
+			<stand>	This emptiness is indication of living.	</stand>
+			<stand>	Can you hear it? The screaming...	</stand>
+			<stand>	So bored...	</stand>
+			<connect>	Again...the darkness will come.	</connect>
+			<connect>	It was a short sleep...	</connect>
+			<levelup>	If you want to survive...be strong...	</levelup>
+			<levelup>	I need more.	</levelup>
+			<perfor_1>	You seems to be peaceful...okay... it won't last long.	</perfor_1>
+			<perfor_1>	ah...	</perfor_1>
+			<perfor_2>	Breathing is like endless agony.	</perfor_2>
+			<perfor_2>	Greed destroy itself...	</perfor_2>
+			<perfor_3>	Do you feel the power within myself...	</perfor_3>
+			<perfor_3>	ke?... It has been a long time since my blood got boiled...	</perfor_3>
+			<perfor_s>	?... I am so dazzled... it is new sensation	</perfor_s>
+			<perfor_s>	Chaos!!!! Chaos is coming!!!!!	</perfor_s>
+		</bit_hungry>			
+					
+		<noting>			
+			<feeding>	Back then... I was most afraid of starving... sad memory...	</feeding>
+			<feeding>	ah... meaningless memory...	</feeding>
+			<hunting>	Yes! destroy!!!! Reveal your ego!!!	</hunting>
+			<hunting>	ahahahahahahahahah!!!! kahahahahahahah!!!!!!	</hunting>
+			<danger>	Rage blunts edge of the sword...	</danger>
+			<danger>	This maybe the end...	</danger>
+			<dead>	Do you feel it? This is the sorrow and rage of the victims.	</dead>
+			<dead>	Do not fear the darkness...	</dead>
+			<stand>	So bored...	</stand>
+			<stand>	Finally... a break.	</stand>
+			<stand>	Okay... If you are devoted to serve me, I will give the chance.	</stand>
+			<connect>	Again... the darkness will come.	</connect>
+			<connect>	Feast of blood starts...	</connect>
+			<levelup>	Okay keep struggling...	</levelup>
+			<levelup>	I need more.	</levelup>
+			<perfor_1>	You seems to be peaceful...okay...it won't last long.	</perfor_1>
+			<perfor_1>	ha...	</perfor_1>
+			<perfor_2>	Breathing is like endless agony.	</perfor_2>
+			<perfor_2>	Greed destroy itself...	</perfor_2>
+			<perfor_3>	Do you feel the power within myself...	</perfor_3>
+			<perfor_3>	ha?... It has been a long time since my blood got boiled...	</perfor_3>
+			<perfor_s>	?...I am so dazzled...it is new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! Chaos is coming!!!!!	</perfor_s>
+		</noting>			
+					
+		<full>			
+			<feeding>	Freeze at once fool...	</feeding>
+			<feeding>	ahh...	</feeding>
+			<hunting>	It seems I don't have to make any action.	</hunting>
+			<hunting>	Yes! destroy!!!! Reveal your ego!!!	</hunting>
+			<danger>	Rage blunts edge of the sword...	</danger>
+			<danger>	Ambition will destroy you...	</danger>
+			<dead>	ahahahahahahahahahahah! Hell's gate is opening!	</dead>
+			<dead>	Do you feel it? This is the sorrow and rage of the victims.	</dead>
+			<stand>	How long will you hesitate!	</stand>
+			<stand>	Wind of tragedy is blowing...	</stand>
+			<stand>	Ok... If you are devoted to serve me, I will give the chance.	</stand>
+			<connect>	Feast of blood starts...	</connect>
+			<connect>	Again...the darkness will come.	</connect>
+			<levelup>	Okay keep struggling...	</levelup>
+			<levelup>	Maybe...you've been evolved a bit?	</levelup>
+			<perfor_1>	You seems to be peaceful...okay...it won't last long.	</perfor_1>
+			<perfor_1>	ah...	</perfor_1>
+			<perfor_2>	Breathing is like endless agony.	</perfor_2>
+			<perfor_2>	Greed destroy itself...	</perfor_2>
+			<perfor_3>	Do you feel the power within myself...	</perfor_3>
+			<perfor_3>	ha?... It has been a long time since my blood got boiled...	</perfor_3>
+			<perfor_s>	?... I am so dazzled...it is new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! Chaos is coming!!!!!	</perfor_s>
+		</full>			
+					
+		<so_full>			
+			<feeding>	Freeze at once fool...	</feeding>
+			<feeding>	Are you trying to torture me like this...you coward...	</feeding>
+			<hunting>	It seems I don't have to make any action.	</hunting>
+			<hunting>	Its so noisy out there...	</hunting>
+			<danger>	Do you see the deadly hand...	</danger>
+			<danger>	For who prepared for the end 	</danger>
+			<dead>	ahahahahhahahahahahaha! Hell's gate is opening!	</dead>
+			<dead>	Do you feel it? This is the sorrow and rage of the victims.	</dead>
+			<stand>	Wind of tragedy is blowing...	</stand>
+			<stand>	Confront me anytime you fool...	</stand>
+			<stand>	Already exhausted?	</stand>
+			<connect>	Feast of blood starts...	</connect>
+			<connect>	Again...the darkness will come.	</connect>
+			<levelup>	Okay keep struggling...	</levelup>
+			<levelup>	Maybe...you've been evolved a bit?	</levelup>
+			<perfor_1>	You seems to be peaceful...okay...it won't last long.	</perfor_1>
+			<perfor_1>	ah...	</perfor_1>
+			<perfor_2>	Breathing is like endless agony.	</perfor_2>
+			<perfor_2>	Greed destroy itself...	</perfor_2>
+			<perfor_3>	Do you feel the power within myself...	</perfor_3>
+			<perfor_3>	ha?... It has been a long time since my blood got boiled...	</perfor_3>
+			<perfor_s>	?...I am so dazzled...it is new sensation.	</perfor_s>
+			<perfor_s>	Chaos!!!! Chaos is coming!!!!!	</perfor_s>
+		</so_full>			
+	</skelion>	
+	
+	
+	
+	
 </monster_talk_table>
